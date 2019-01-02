@@ -20,8 +20,8 @@ class uart
 public:
 // constructor
 	uart(uint16_t baud);
-	uart(uint8_t baud, unsigned char framesize);
-	uart(uint8_t baud, unsigned char framesize, unsigned char parity, unsigned char stopbits);
+	uart(uint16_t baud, unsigned char framesize);
+	uart(uint16_t baud, unsigned char framesize, unsigned char parity, unsigned char stopbits);
 
 //	(*TODO: 9 bits not supported yet*)
 //	(*TODO* synchronous datatransfer not supported yet)
