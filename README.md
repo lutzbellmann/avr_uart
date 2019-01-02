@@ -7,7 +7,7 @@ Create a directory named avr_uart in /libraries directory of your sketch directo
 # usage
 I may, or may not include an example later.
 In your Sketch, use:
-uart MYUART(<baudrate>[, <framesize][, <parity>, <stopbits>];
+uart MYUART(<baudrate>, <framesize>, <parity>, <stopbits>);
   to declare the constructor.
 Refer to avr_uart.h for possible commands.
   
