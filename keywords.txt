@@ -1,0 +1,21 @@
+###########################################
+# Syntax Coloring Map For avr_uart
+###########################################
+
+###########################################
+# Datatypes (KEYWORD1)
+###########################################
+uart		KEYWORD1
+
+###########################################
+# Methods and Functions (KEYWORD2)
+###########################################
+rxenable	KEYWORD2
+txenable	KEYWORD2
+flushbuffer	KEYWORD2
+getbyte		KEYWORD2
+sendbyte	KEYWORD2
+
+###########################################
+# Constants (LITERAL1)
+###########################################
