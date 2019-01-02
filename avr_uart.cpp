@@ -21,7 +21,7 @@ uart::uart(uint16_t baud)
 	UCSRC |= ((1<<UCSZ1)|(1<<UCSZ0)); // standard 8Bit frame
 }
 
-uart::uart(uint8_t baud, unsigned char framesize)
+uart::uart(uint16_t baud, unsigned char framesize)
 {
 	#define UART_UBRR_CALC(BAUD_,FREQ_) ((FREQ_)/((BAUD_)*8L)-1)
         UCSRA |= (1<<U2X); // double speed cannot be bad
@@ -36,7 +36,7 @@ uart::uart(uint8_t baud, unsigned char framesize)
 	}
 }
 
-uart::uart(uint8_t baud, unsigned char framesize, unsigned char parity, unsigned char stopbits)
+uart::uart(uint16_t baud, unsigned char framesize, unsigned char parity, unsigned char stopbits)
 {
         #define UART_UBRR_CALC(BAUD_,FREQ_) ((FREQ_)/((BAUD_)*8L)-1)
         UCSRA |= (1<<U2X); // double speed cannot be bad
