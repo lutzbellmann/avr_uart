@@ -87,7 +87,7 @@ unsigned char uart::flushbuffer() //returns 0 if flush ok, otherwise 1
 
 unsigned char uart::getbyte() // receive a byte; TODO: probably interrupt handling is a much better solution
 {
-	while (!(UCSRA & (1<RXC))); // waits for data to appear in the buffer
+	while (!(UCSRA & (1<<RXC))); // waits for data to appear in the buffer
 	return UDR;
 }
 
